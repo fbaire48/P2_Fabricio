@@ -6,20 +6,20 @@ const userController = require("../controllers/userController.js");
 const userRoutes = express.Router();
 
 // In the url "/", if the server gets a GET REQUEST it will GET all the Users
-userRoutes.get("/", userController.getAllUsers);
+userRoutes.get("/getAllUsers", userController.getAllUsers);
 
 // In the url "/", if the server gets a POST REQUEST it will
 // CREATE a new user BASED on the request body
-userRoutes.post("/", userController.createUser);
+userRoutes.post("/createUser", userController.createUser);
 
 // In the url "/:id", if the server gets a PUT REQUEST it will
 // UPDATE a user BASED on the id given in the request url, also known
 // as the request params
-userRoutes.put("/:id", userController.updateUser);
+userRoutes.put("/updateUser/:id", userController.updateUser);
 
 // In the url "/:id", if the server gets a DELETE REQUEST it will
 // DELETE a user BASED on the id given in the request url, also known
 // as the request params
-userRoutes.delete("/:id", userController.deleteUser);
+userRoutes.delete("/deleteUser/:id", userController.deleteUser);
 
 module.exports = userRoutes;
