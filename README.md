@@ -1,3 +1,4 @@
+<pre>
 Aluno: Nícolas Vítor Carvalho de Oliveira
 Professor: Fabrício Dias
 Curso: Engenharia de Software
@@ -23,3 +24,4 @@ I2: Para que a página HTML seja reconhecida pelo Express, foi criada uma pasta 
 I3: Dentro do arquivo "index.html" foi criado um formulário, que utiliza o método post, com os campos para usuário, que deve colocar seu e-mail, e para senha. No arquivo "main.js", utilizarei o método post, o mesmo do formulário, na rota "/". Com o envio do formulário, recuperarei o usuário e a senha do corpo da requisição, que no caso é o corpo do formulário. Verificarei se o usuário existe. Caso exista, ele será enviado para a URL do Flask; caso não exista, será enviada a mensagem de usuário não encontrado. Se ocorrer outro erro, será enviado o status 500 juntamente com a mensagem de erro.
 
 I4: Foi utilizado de base o projeto passado, também entregue ao professor Fabrício.
+</pre>
